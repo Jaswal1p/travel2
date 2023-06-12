@@ -2,6 +2,7 @@ import React from 'react';
 import './home.css';
 import video from '../../Assets/Vid-1.MOV';
 import {GrLocation} from 'react-icons/gr';
+import {HiFilter} from 'react-icons/hi';
 
 const Home = () => {
   return (
@@ -24,30 +25,40 @@ const Home = () => {
 
             <div className="cardDiv grid">
             <div className="destinationInput">
-                    <label htmlFor="city">Search your destination</label>
+                    <label className='label' htmlFor="city">Search your destination</label>
                     <div className="input flex">
-                        <input type="text" placeholder="Enter name here ..."/>
+                        <input className='field' type="text" placeholder="Enter name here ..."/>
                         <GrLocation className="icon"/>
                     </div>
                 </div>
 
                 <div className="dateInput">
-                    <label htmlFor="date">Select your date:</label>
+                    <label className='label' htmlFor="date">Select your date:</label>
                     <div className="input flex">
-                        <input type="date" />
+                        <input className='field' type="date" />
                         
                     </div>
                 </div>
 
                 <div className="priceInput">
                     <div className="label_total flex">
-                       <label htmlFor="price">Max price:</label>
+                       <label className='label' htmlFor="price">Max price:</label>
                        <h3 className="total"> $5000</h3>
                        <div className="input flex">
-                          <input type='range' max="5000" min="1000"/>
+                          <input className='field' type='range' max="5000" min="1000"/>
                        </div>
                     </div>
                 </div>
+
+                <div className="searchOptions flex">
+                  <HiFilter className="icon"/>
+                  <span className='filter' >MORE FILTERS</span>
+                </div>
+
+            </div>
+
+            <div className="homeFooterIcons flex">
+              
             </div>
         </div>
     </section>
