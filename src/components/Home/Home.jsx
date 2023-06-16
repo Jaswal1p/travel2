@@ -21,10 +21,10 @@ const Home = () => {
 
   return (
     <section className='home'>
-        <div className="pic">
+        {/* <div className="pic"> */}
           <div className='overlay'></div>
           <video src={video} muted autoPlay loop type="video/mp4"></video>
-        </div>
+        {/* </div> */}
 
         <div className="homeContent container">
             <div className="textDiv">
@@ -40,13 +40,17 @@ const Home = () => {
             </div>
 
             <div data-aos="fade-up" className="cardDiv grid">
-            <div className="destinationInput">
-                    <label className='label' htmlFor="city">Search your destination</label>
-                    <div className="input flex">
-                        <input className='field' type="text" placeholder="Enter name here ..."/>
-                        <GrLocation className="icon"/>
-                    </div>
-                </div>
+              <div className="destinationInput">
+                  <label className='label' htmlFor="city">
+                    Search your destination
+                  </label>
+                    
+                  <div className="input flex">
+                      <input className='field' type="text" placeholder="Enter name here ..."/>
+                      
+                      <GrLocation className="icon"/>
+                  </div>
+              </div>
 
                 <div className="dateInput">
                     <label className='label' htmlFor="date">Select your date:</label>
@@ -60,9 +64,12 @@ const Home = () => {
                     <div className="label_total flex">
                        <label className='label' htmlFor="price">Max price:</label>
                        <h3 className="total"> $5000</h3>
-                       <div className="input flex">
+                       {/* <div className="input flex">
                           <input className='field' type='range' max="5000" min="1000"/>
-                       </div>
+                       </div> */}
+                    </div>
+                    <div className="input flex">
+                          <input className='field' type='range' max="5000" min="1000"/>
                     </div>
                 </div>
 

@@ -74,7 +74,7 @@ const Navbar = () => {
 
                 </div>
 
-                <div onClick={showNav} lassName="toggleNavbar">
+                <div onClick={showNav} className="toggleNavbar">
                     <TbGridDots className="icon"/>
                 </div>
             </header>
