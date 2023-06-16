@@ -62,12 +62,12 @@
                 .navItem{
                     padding: .5rem 0;
 
-                    .navLink{
+                    .navlink{
                         color: var(--textColor);
                         font-size: .9rem;
                         font-weight: 600;
                         &:hover{
-                            color: var(--PrimaryColor)
+                            color: var(--PrimaryColor);
                         }
                     }
                 }
@@ -108,6 +108,40 @@
         }
         &:hover.icon{
             color: var(--SecondaryColor);
+        }
+    }
+}
+
+/* MEDIA QUERIES ======================================== */
+
+@media screen and (min-width: 769px) {
+    .toggleNavbar,.closeNavbar{
+        display: none;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+
+        .navBar{
+            .navLists{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+
+                .navItem{
+                    .navlink{
+                        color: var(--textColor);
+                        padding: 0 0.45;
+                        font-size: 0.9rem;
+                        font-weight: 500;
+
+                        &:hover{
+                            color: var(--PrimaryColor);
+                        }
+                    }
+                }
+            }
         }
     }
 }

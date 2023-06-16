@@ -9,7 +9,7 @@ const Navbar = () => {
     // eslint-disable-next-line
     const [active, setActive] = useState('navBar');
     
-    const showNav = () => {
+    const showNav = ()=> {
         setActive('navBar activeNavBar');
     }
 
@@ -30,36 +30,43 @@ const Navbar = () => {
                    <ul className="navLists flex">
 
                         <li className="navItem">
-                        <a href="#section" className="navlink">Home</a>
+                        {/* eslint-disable-next-line     */}
+                        <a href="#" className="navlink">Home</a>
                         </li>
 
                         <li className="navItem">
-                        <a href="#section" className="navlink">Packages</a>
+                        {/* eslint-disable-next-line     */}    
+                        <a href="#" className="navlink">Packages</a>
                         </li>
 
                         <li className="navItem">
-                        <a href="#section" className="navlink">Shop</a>
+                        {/* eslint-disable-next-line     */}    
+                        <a href="#" className="navlink">Shop</a>
                         </li>
 
                         <li className="navItem">
-                        <a href="#section" className="navlink">About</a>
+                        {/* eslint-disable-next-line     */}    
+                        <a href="#" className="navlink">About</a>
                         </li>
 
                         <li className="navItem">
-                        <a href="#section" className="navlink">Pages</a>
+                        {/* eslint-disable-next-line     */}    
+                        <a href="#" className="navlink">Pages</a>
                         </li> 
 
                         <li className="navItem">
-                        <a href="#section" className="navlink">News</a>
+                        {/* eslint-disable-next-line     */}    
+                        <a href="#" className="navlink">News</a>
                         </li>  
 
                         <li className="navItem">
-                        <a href="#section" className="navlink">Contact</a>
+                        {/* eslint-disable-next-line     */}    
+                        <a href="#" className="navlink">Contact</a>
                         </li> 
 
-                        <button className="btn">
-                            <a href="#section">Book Now</a>
-                            </button>                   
+                        <button type="button" className="btn">
+                            Book Now
+                        </button>                   
                    </ul>
                    <div onClick={removeNavbar} className="closeNavbar">
                     <AiFillCloseCircle className="icon"/>
@@ -67,11 +74,7 @@ const Navbar = () => {
 
                 </div>
 
-                {/* <div onClick={removeNavbar} className="toggleNavbar">
-                    <AiFillCloseCircle className="icon"/>
-                </div> */}
-
-                <div onClick={showNav} className="toggleNavbar">
+                <div onClick={showNav} lassName="toggleNavbar">
                     <TbGridDots className="icon"/>
                 </div>
             </header>
